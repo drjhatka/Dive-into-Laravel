@@ -1,0 +1,19 @@
+step
+1# download unisharp file manager repo through composer
+
+2# add service providers and aliases
+3# publish vendor files
+4# change lfm config file in the app config folder.
+5# create a symbolic link between app storage and public folder.
+if lfm.php Isn't there you have to publish the package again.
+
+6# in the lfm config file change middlware to your custom guard by
+changing auth property. add a colon after auth and specify Guard. 
+
+Now you should point ckeditor to lfm when you initialize the editor through js.
+
+
+all done now you should be good to go!
+Remember lfm uses authentication  middleware so you have to be logged in
+to use it.
+
