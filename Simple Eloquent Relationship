@@ -1,1 +1,12 @@
 In order to use the features available in eloquent, you first have to find the relationship between your models or tables.
+
+The raltionship in laravel is based on two table one parent table and the other is child table.
+
+for example a record in news table can belong to category. In this case News has one to one relation with category table.
+
+So in the news model you have to define belongsto relationship inside category method. 
+
+laravel will automatically......
+
+Note: In order insert data into the linked table you have to define the mass assignable attributes inside related table.
+e.g. protected $fillable = ['col-1',];
